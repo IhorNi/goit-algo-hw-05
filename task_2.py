@@ -23,12 +23,13 @@ def binary_search_with_iterations(arr, target):
     return iterations, upper_bound
 
 
-examples = [
-    ([1.1, 2.2, 3.3, 4.4, 5.5], 3.3),
-    ([1.1, 2.2, 3.3, 4.4, 5.5], 4.0),
-    ([1.1, 2.2, 3.3, 4.4, 5.5], 12.0),
-]
+if __name__ == '__main__':
+    examples = [
+        ([1.1, 2.2, 3.3, 4.4, 5.5], 3.3),
+        ([1.1, 2.2, 3.3, 4.4, 5.5], 4.0),
+        ([1.1, 2.2, 3.3, 4.4, 5.5], 12.0),
+    ]
 
-for array, target in examples:
-    result = binary_search_with_iterations(array, target)
-    print(f"Find {target} in {array}: {result}")
+    for array, target in examples:
+        result = binary_search_with_iterations(array, target)
+        print(f"Find {target} in {array}: {result}")

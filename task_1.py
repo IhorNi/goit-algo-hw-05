@@ -39,15 +39,16 @@ class HashTable:
         return False
 
 
-# Тестуємо нашу хеш-таблицю:
-H = HashTable(5)
-H.insert("apple", 10)
-H.insert("orange", 20)
-H.insert("banana", 30)
+if __name__ == '__main__':
+    # Тестуємо нашу хеш-таблицю:
+    H = HashTable(5)
+    H.insert("apple", 10)
+    H.insert("orange", 20)
+    H.insert("banana", 30)
 
-print(H.get("apple"))   # Виведе: 10
-print(H.get("orange"))  # Виведе: 20
-print(H.get("banana"))  # Виведе: 30
-print(H.delete("banana")) # Виведе: True
-print(H.delete("ban")) # Виведе: False
-print(H.get("banana"))  # Виведе: None
+    print(H.get("apple"))   # Виведе: 10
+    print(H.get("orange"))  # Виведе: 20
+    print(H.get("banana"))  # Виведе: 30
+    print(H.delete("banana")) # Виведе: True
+    print(H.delete("ban")) # Виведе: False
+    print(H.get("banana"))  # Виведе: None
